@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #33333373;
+    text-align: center;
+}
+h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: rgb(226, 187, 78);
+}
+.job {
+    color: rgb(224, 201, 137);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.bio {
+    font-size: 14px;
+    line-height: 1.6;
+    color:  rgb(224, 201, 137);
+    margin-bottom: 25px;
+}
+.link {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.btn.primary {
+    background-color: #333;
+    color: #ffff;
+}
+.btn.secondary {
+    border: 1px solid #ddd;
+    color: rgb(226, 187, 78);
+}
+.btn:hover {
+    opacity: 0.8;
+}
+
+.skills {
+    margin-top: 30px;
+    border-top: 1px dashed #eee;
+    padding-top: 20px;
+}
+.skills h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: rgb(226, 187, 78);
+}
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+.skills li {
+    background-color: rgb(226, 187, 78);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #fff;
+}
+
