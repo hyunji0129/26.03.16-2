@@ -1,0 +1,17 @@
+.calc-container {
+    background-color: antiquewhite;
+    padding: 20px;
+}
+.calc-box {
+    background-color: rgb(37, 126, 96);
+    height: 100px;
+    width: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin으로 오른쪽,왼쪽 위치 저장 */
+    margin: 0 auto;
+    /* margin-left: auto; */
+    font-weight: bold;
+    color: #fff;
+}
