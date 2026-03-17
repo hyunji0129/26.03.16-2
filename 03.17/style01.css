@@ -83,4 +83,16 @@ body {
         display: none;
     }
 }
+/* @media (max-width:768px){
+    .gallery-container {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
+    .menu-list {
+        display: none;
+    }
+} */
+
 
