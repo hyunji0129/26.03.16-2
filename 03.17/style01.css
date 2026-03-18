@@ -44,6 +44,28 @@ body {
     gap: 25px;
     padding: 40px 5%;
 }
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: blue;
+    color: #fff;
+}
+button:first-child {
+    color: #fff;
+    background-color: blue;
+}
 .card {
     background-color: #fff;
     flex: 1 1 calc(33.3333% - 25px);
@@ -51,6 +73,13 @@ body {
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 5px 15px #33333344;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px #333333c5;
+    border: 2px solid green;
 }
 .card-photo img {
     width: 120px;
@@ -59,14 +88,14 @@ body {
     /* 이미지 찌그러지지 않게 */
     object-fit: cover;
     margin-bottom: 15px;
-    border: 3px solid #9c9a9a;
 }
+
 .card-title {
     font-size: 22px;
     margin-bottom: 8px;
 }
 .card-title:hover {
-    color: blue;
+    color: green;
 }
 .card-info {
     font-size: 14px;
