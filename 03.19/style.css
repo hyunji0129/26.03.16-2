@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(213, 234, 243);
+    color: #333;
+} 
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgb(180, 220, 236);
+    border-bottom: 1px solid #b9b9b9;
+} 
+.nav-link {
+    display: flex;
+    gap: 20px;
+}
+.nav-link a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+} 
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 5%;
+}
+.card{
+    background: #fff;
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 280px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #3333332c;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.card:hover{
+    transform: translateY(-10px);
+    /* border: 1px solid rgb(99, 174, 204); */
+    background:rgb(70, 135, 161);
+    color: #fff;
+}
+.action-bar{
+    display: flex;
+    gap: 15px;
+    padding: 0 5% 40px;
+}
+.btn1{
+    flex: 1;
+    padding: 10px 5%;
+    color: rgb(70, 135, 161);
+    border-radius: 10px;
+    border: 1px solid  #b9b9b9;
+    background: #fff;
+    cursor: pointer;
+}
+.btn2{
+    flex: 5;
+    padding: 10px 5%;
+    background-color: rgb(70, 135, 161);
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn2:hover {
+    background-color: tomato;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테스트</title>
+    <style>
+      .bottom-actions {
+        display: flex;
+        gap: 12px;
+        /* 가로는 %값으로 */
+        padding: 20px 5%;
+        background: #fff;
+        border-top: 1px solid #ddd;
+      }
+      .btn-sub {
+        /* 비중 적게 주기 */
+        flex: 1;
+        padding: 15px 0;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .btn-main {
+        /* 비중 크게 주기 */
+        flex: 3;
+        padding: 15px 0;
+        background-color: rgb(66, 202, 157);
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+   <div class="bottom-actions">
+    <button class="btn-sub">목록으로</button>
+
+    <button class="btn-main">수강신청하기</button>
+   </div>
+</body>
+</html>
