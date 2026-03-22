@@ -74,5 +74,5 @@ body{
     transition: background 0.2s;
 }
 .btn2:hover {
-    background-color: tomato;
+    background-color: palevioletred;
 }
