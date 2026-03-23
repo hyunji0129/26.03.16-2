@@ -1,48 +1,47 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
+body{
     font-family: sans-serif;
-    background: #fff;
+    background-color: #fff;
     color: #333;
 }
-a {
-    /* 부모요소의 색을 받겠다 */
+a{
     color: inherit;
     text-decoration: none;
 }
-.container {
+.container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
 }
-.flex-row {
+.flex-row{
     display: flex;
     align-items: center;
 }
-.flex-between {
+.flex-between{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.flex-center {
+.flex-center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.flex-col {
+.flex-col{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 12px;
 }
-.gap-lg {
+.gap-lg{
     gap: 40px;
 }
-.label-box {
-    background-color: #ddd;
+.label-box{
+    background: #ddd;
     color: #666;
     font-size: 14px;
     font-weight: bold;
@@ -50,11 +49,11 @@ a {
     display: inline-block;
     border-radius: 4px;
 }
-.label-box.sm {
+.label-box.sm{
     font-size: 12px;
     padding: 6px 14px;
 }
-.btn-box {
+.btn-box{
     display: inline-block;
     background: #bbb;
     color: #555;
@@ -64,16 +63,16 @@ a {
     border-radius: 4px;
     cursor: pointer;
 }
-.text-line {
+.text-line{
     height: 14px;
     background: #e0e0e0;
     border-radius: 3px;
     width: 100%;
 }
-.text-line.sm {
+.text-line.sm{
     width: 60%;
 }
-.placeholder {
+.placeholder{
     background: #d5d5d5;
     display: flex;
     justify-content: center;
@@ -83,17 +82,15 @@ a {
     font-weight: bold;
     border-radius: 6px;
 }
-
-.site-header {
+.site-header{
     height: 70px;
     border-bottom: 2px solid #ccc;
     background: #f5f5f5;
 }
-
-.site-header .container {
+.site-header .container{
     height: 100%;
 }
-.logo {
+.logo{
     background: #ccc;
     padding: 8px 24px;
     font-weight: bold;
@@ -101,10 +98,10 @@ a {
     border-radius: 4px;
     color: #666;
 }
-.gnb {
+.gnb{
     gap: 8px;
 }
-.nav-item {
+.nav-item{
     background: #ddd;
     padding: 6px 16px;
     border-radius: 4px;
@@ -112,43 +109,43 @@ a {
     font-weight: bold;
     color: #666;
 }
-.hero {
+.hero{
     height: 480px;
-    background-color: #e0e0e0;
+    background: #e0e0e0;
     border-bottom: 2px dashed #bbb;
 }
-.hero-inner {
+.hero-inner{
     height: 100%;
 }
-.hero-text {
+.hero-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
 }
-.section {
+.section{
     padding: 80px 0;
 }
-.section-title {
+.section-title{
     margin-bottom: 36px;
 }
-.bg-gray {
+.bg-gray{
     border-top: 1px solid #e0e0e0;
     background: #f5f5f5;
     border-bottom: 1px solid #e0e0e0;
 }
-.card-grid {
+.card-grid{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-.card-grid.col-3 .card {
+.card-grid.col-3 .card{
     flex: 1 1 calc(33.333% - 20px);
 }
-.card-grid.col-4 .card {
+.card-grid.col-4 .card{
     flex: 1 1 calc(25% - 20px);
 }
-.card {
+.card{
     background: #e4e4e4;
     border: 2px solid #bbb;
     display: flex;
@@ -160,18 +157,18 @@ a {
     font-weight: bold;
     color: #888;
 }
-.card.sm {
+.card.sm{
     height: 200px;
 }
-.col-img {
+.col-img{
     flex: 1;
     height: 320px;
 }
-.col-text {
+.col-text{
     flex: 1;
 }
-.site-footer {
+.site-footer{
     padding: 32px 0;
-    background-color: #e8e8e8;
+    background: #e8e8e8;
     border-top: 2px solid #ccc;
 }
