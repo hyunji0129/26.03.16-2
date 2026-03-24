@@ -1,10 +1,220 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
+body{
     font-family: sans-serif;
-    background: #fff;
+    background: #f0f0f0;
     color: #333;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.label-box{
+    background: #ddd;
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 4px;
+}
+.label-box.sm{
+    font-size: 11px;
+    padding: 5px 12px;
+}
+.label-box.lg{
+    font-size: 20px;
+    padding: 12px 28px;
+}
+.btn-box{
+    display: inline-block;
+    background: #bbb;
+    color: #555;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 28px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 헤더 */
+.site-header{
+    height: 60px;
+    background: #e8e8e8;
+    border-bottom: 2px solid #ccc;
+    position: sticky;
+    top: 0;
+    /* z-index: 100; */
+}
+.header-inner{
+    height: 100%;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    background: #ccc;
+    padding: 7px 22px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #666;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search-box{
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 40px 6px 14px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #aaa;
+}
+.icon-box{
+    background: #ddd;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #777;
+}
+.page-wep{
+    display: flex;
+    align-items: flex-start;
+    min-height: calc(100vh - 60px);
+}
+.sidebar{
+    width: 220px;
+    min-height: calc(100vh - 60px);
+    background: #e0e0e0;
+    border-right: 2px solid #ccc ;
+    padding: 24px 16px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: sticky;
+    top: 60px;
+    align-self: flex-start;
+}
+.sider-logo{
+    background: #ccc;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    color: #666;
+    border-radius: 4px;
+}
+.sider-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.side-item{
+    display: block;
+    background: #d5d5d5;
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+    border-left: 3px solid transparent;
+}
+.side-item.active{
+    background: #333;
+    border-left-color: red;
+    color: #fff;
+}
+/* 메인컨텐츠 */
+.main-container{
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    min-width: 0;
+}
+.banner{
+    width: 100%;
+    height: 280px;
+    background: #ddd;
+    border: 2px dashed #bbb;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+.content-row{
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+.list-area{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+}
+.list-item{
+    background: #e8e8e8;
+    border: 1px solid #d5d5d5;
+    border-radius: 6px;
+    padding: 4px;
+}
+.thumb{
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    background: #d5d5d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #888;
+    border-radius: 4px;
+}
+.item-body{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-direction: column;
+    min-width: 0;
+}
+.date{
+    flex-shrink: 0;
+    background: #ddd;
+    color: #666;
+    font-size: 11px;
+    padding: 5px 12px;
+    border-radius: 4px;
+}
+.line{
+    height: 13px;
+    width: 100%;
+    background: #777;
+    border-radius: 3px;
+}
+.line.sm{
+    width: 55%;
 }
