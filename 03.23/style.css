@@ -175,3 +175,35 @@ a {
     background-color: #e8e8e8;
     border-top: 2px solid #ccc;
 }
+@media (max-width: 768px){
+    .gnb {
+        display: none;
+    }
+    .hero {
+        height: 300px;
+    }
+    .card-grid {
+        flex-direction: column;
+    }
+    .card-grid col-3,
+    .card-grid col-4 {
+        flex: none;
+        width: 100%;
+    }
+    .section .flex-row {
+        flex-direction: column;
+    }
+    .col-img,
+    .col-text {
+        width: 100%;
+        flex: none;
+    }
+    .col-img {
+        height: 220px;
+    }
+    .site-footer .container {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
