@@ -14,6 +14,7 @@ a{
     color: inherit;
 }
 
+/* 공통요소 */
 .label-box{
     background: #ddd;
     color: #666;
@@ -109,7 +110,7 @@ a{
     top: 60px;
     align-self: flex-start;
 }
-.sider-logo{
+.side-logo{
     background: #ccc;
     padding: 10px;
     text-align: center;
@@ -118,7 +119,7 @@ a{
     color: #666;
     border-radius: 4px;
 }
-.sider-nav{
+.side-nav{
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -186,10 +187,15 @@ a{
     align-items: center;
     gap: 14px;
 }
-.item-thumb{
+.thumb{
     width: 70px;
     height: 70px;
     flex-shrink: 0;
+    background: #bbb;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .item-body{
     flex: 1;
@@ -198,6 +204,9 @@ a{
     gap: 8px;
     flex-direction: column;
     min-width: 0;
+}
+.item-meta{
+    flex-shrink: 0;
 }
 .date{
     flex-shrink: 0;
@@ -210,7 +219,7 @@ a{
 .line{
     height: 13px;
     width: 100%;
-    background: #777;
+    background: #e0e0e0;
     border-radius: 3px;
 }
 .line.sm{
@@ -224,13 +233,22 @@ a{
     min-width: 0;
 }
 .widget-box{
-    background: #888;
+    background: #e8e8e8;
     border: 1px solid #d5d5d5;
     border-radius: 6px;
     padding: 16px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.widget-img{
+    width: 100%;
+    height: 120px;
+    background-color: #bbb;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .widget-title{
     font-size: 12px;

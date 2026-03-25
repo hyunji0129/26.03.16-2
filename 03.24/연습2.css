@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.page-wrap {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sider-bar {
+    width: 150px;
+    background: #bbb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.logo,
+a {
+    background: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    font-size: 18px;
+}
+
+.nav-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-content {
+    display: flex;
+    /* 가로넓이 */
+    flex: 1;
+}
+
+.main-box {
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* 가로넓이 */
+    flex: 1;
+}
+
+.hero-box {
+    background: rgb(182, 228, 247);
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 가로넓이
+    flex: 1; */
+}
+
+.card-box {
+    height: 800px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 20px);
+    background: rgb(243, 243, 203);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background: #bbb;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
