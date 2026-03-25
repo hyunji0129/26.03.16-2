@@ -216,3 +216,74 @@ a{
 .line.sm{
     width: 55%;
 }
+.widget-area{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+}
+.widget-box{
+    background: #888;
+    border: 1px solid #d5d5d5;
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.widget-title{
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    background: #ddd;
+    padding: 5px 12px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.list-title{
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+    background: #ddd;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.card-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card-grid{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card-grid .card{
+    flex: 1 1 calc(33.333% - 20px);
+    background: #e4e4e4;
+    border: 2px dashed #bbbb;
+    border-radius: 8px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #8888;
+}
+.site-footer{
+    padding: 24px;
+    background: #e0e0e0;
+    border-top: 2px solid #ccc;
+}
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-links{
+    display: flex;
+    gap: 8px;
+}

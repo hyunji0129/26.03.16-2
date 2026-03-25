@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: pink;
+}
+.hero{
+    background: skyblue;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+.card{
+    flex: 1;
+    background: rgb(243, 243, 210);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+footer{
+    background: pink;
+    padding: 10px;
+    text-align: center;
+}
