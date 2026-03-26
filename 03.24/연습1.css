@@ -26,7 +26,7 @@ body{
 }
 .hero-box{
     height: 300px;
-    background: rgb(182, 228, 247);
+   
     display: flex;
     justify-content: center;
     align-items: center;

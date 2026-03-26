@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습 선생님B</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        .wrapper{
+            display: flex;
+            min-width: 100vh;
+        }
+        .sidebar{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 120px;
+            background: pink;
+            padding: 10px;
+        }
+        .logo{
+            background: #333;
+            padding: 8px;
+            text-align: center;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        nav a{
+            background: blue;
+            padding: 8px;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+        }
+
+        .main{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .hero{
+            background: blanchedalmond;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cards{
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            flex: 1;
+        }
+        .card{
+            flex: 1;
+            background: yellowgreen;
+            min-height: 100vh;
+        }
+        .footer{
+            background: #333;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="logo">logo</div>
+            <nav>
+                <a href="#">01</a>
+                <a href="#">02</a>
+                <a href="#">03</a>
+            </nav>
+        </aside>
+
+        <div class="main">
+            <div class="hero">hero</div>
+            <div class="cards">
+                <div class="card">01</div>
+                <div class="card">02</div>
+                <div class="card">03</div>
+            </div>
+            <div class="footer">footer</div>
+        </div>
+    </div>
+</body>
+</html>
