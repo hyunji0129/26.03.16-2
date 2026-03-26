@@ -23,6 +23,7 @@ a {
     background: #bbb;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: 10px;
     gap: 10px;
 }
@@ -82,8 +83,6 @@ a {
 .footer {
     background: #bbb;
     padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     height: 70px;
 }
