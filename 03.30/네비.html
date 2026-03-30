@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>네비</title>
     <link rel="stylesheet" href="style 30.css">
 </head>
+
 <body>
+
     <body>
-    <nav class="nav-bar">
-        <a href="#" class="logo">MyPortfolio</a>
+        <nav class="nav-bar">
+            <a href="#" class="logo">My Portfolio</a>
 
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
 
 
-        <button class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
 
         <ul class="mobile-menu" id="mobileMenu">
             <li><a href="#" onclick="closeMenu()">Home</a></li>
             <li><a href="#" onclick="closeMenu()">Home</a></li>
             <li><a href="#" onclick="closeMenu()">Home</a></li>
             <li><a href="#" onclick="closeMenu()">Home</a></li>
-            
+
         </ul>
-    </nav>
 
-    <script>
-            const hamburger =document.getElementById('hamburger');
-            const mobileMenu =document.getElementById('mobileMenu');
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
 
-            hamburger.addEventListener('click', () =>{
+            hamburger.addEventListener('click', () => {
                 hamburger.classList.toggle('open');
                 mobileMenu.classList.toggle('open');
             });
 
-            function closeMenu(){
+            function closeMenu() {
                 hamburger.classList.remove('open');
                 mobileMenu.classList.remove('open');
             }
-    </script>
+        </script>
 
+    </body>
 </body>
-</body>
+
 </html>

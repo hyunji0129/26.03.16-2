@@ -54,12 +54,16 @@ a{
     background: #111;
     transition:  all 0.3s;
 }
-.hamberger.open span:nth-child(1) {transform: translateY(7px) rotate(45deg);}
-.hamberger.open span:nth-child(2) {opacity: 0;}
-.hamberger.open span:nth-child(1) {transform: translateY(-7px) rotate(-45deg);}
+.hamburger.open span:nth-child(1) {transform: translateY(7px) rotate(45deg);}
+.hamburger.open span:nth-child(2) {opacity: 0;}
+.hamburger.open span:nth-child(3) {transform: translateY(-7px) rotate(-45deg);}
 
 .mobile-menu{
     display: none;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    background: #fff;
     padding: 20px 24px;
     border-bottom: 1px solid #eee;
 }
@@ -68,7 +72,7 @@ a{
 }
 .mobile-menu a{
     font-size: 0.95rem;
-    color: #333;
+    color: tomato;
 }
 
 @media (max-width: 768px) {
