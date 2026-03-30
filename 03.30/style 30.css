@@ -70,3 +70,8 @@ a{
     font-size: 0.95rem;
     color: #333;
 }
+
+@media (max-width: 768px) {
+    .menu{display: none;}
+    .hamburger{display: flex;}
+}
