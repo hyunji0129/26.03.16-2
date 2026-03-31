@@ -18,7 +18,7 @@
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 12px;
     max-width: 1100px;
-    margin: 48px auto;
+    margin: 0 auto 48px;
 }
 .g-item{
     overflow: hidden;
