@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-c</title>
+    <style>
+        *{
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card{
+            background: pink;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px #11111133;
+            transition: transform 0.2s;
+            text-align: center;
+        }
+        .card:hover{
+            transform: translateY(-5px);
+        }
+        .card2{
+            grid-column: span 2;
+            background: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="card">
+            <h2>카드1</h2>
+            <p>기본 그리드 아이템</p>
+        </div>
+        <div class="card2">
+            <h2>카드2</h2>
+            <p>grid-colum: span 2 /두칸차지 </p>
+        </div>
+        <div class="card">
+            <h2>카드3</h2>
+            <p>기본 그리드 아이템</p>
+        </div>
+        <div class="card">
+            <h2>카드4</h2>
+            <p>기본 그리드 아이템</p>
+        </div>
+        <div class="card">
+            <h2>카드5</h2>
+            <p>기본 그리드 아이템</p>
+        </div>
+    </div>
+</body>
+</html>
