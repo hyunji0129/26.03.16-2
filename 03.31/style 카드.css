@@ -11,6 +11,7 @@ body{
 }
 .card-grid{
     display: grid;
+    /* 균등한 3열, 1fr은1:1:1비율 - 한 줄로  모두 3개씩 동일하게 만들어라 */
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     max-width: 1100px;
@@ -21,7 +22,7 @@ body{
     .card-grid{ grid-template-columns: repeat(2, 1fr);}
 }
 @media (max-width: 560px) {
-    .card-grid{ grid-template-columns: repeat(1fr);}
+    .card-grid{ grid-template-columns: 1fr;}
 }
 
 .card{
@@ -31,7 +32,8 @@ body{
     /* 이미지가 넘쳐날때 가려주라 */
     overflow: hidden;
     border: 1px solid #eee;
-    transition: trasform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 10px;
 }
 .card:hover{
     transform:  translateY(-4px);
@@ -44,15 +46,16 @@ body{
     display: block;
     background: #ddd;
 }
-
-.card{
-    padding: 10px;
-}
 .card-body{
     padding: 10px;
 }
 .card-tag{
-    font-size: 1rem;
+    font-size: 0.7rem;
+    /* font-weight: 700; */
+    /* 글자사이 간격 */
+    letter-spacing: 0.1rem;
+    /* 대문자 */
+    text-transform: uppercase;
     color: #222;
     margin-bottom: 5px;
 }
@@ -60,21 +63,25 @@ body{
     font-size: 1.05rem;
     margin-bottom: 8px;
     color: tomato;
+    /* 줄높이 */
     line-height: 1.4;
     font-weight: 700;
 }
 
 .card-desc{
     margin-bottom: 10px;
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.6;
 }
 
-.card a{
+.card-link{
     display: inline-block;
     text-decoration: none;
     background: tomato;
     color: #fff;
     border-radius: 5px;
-    padding: 5px 5px;
+    padding: 5px;
     font-size: 0.8rem;
     letter-spacing: 0.04em;
 }
