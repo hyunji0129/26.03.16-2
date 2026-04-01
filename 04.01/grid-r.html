@@ -23,16 +23,27 @@
             align-items: center;
             padding: 0 20px;
         }
+        span{
+            display: block;
+            width: 2px;
+            height: 100px;
+            background: #888;
+        }
         .visual{
-            margin: 30px;
-            align-items: center;
-            justify-content: center;
+            margin: 30px 30px 0;
             font-size: 1.5rem;
             font-weight: bold;
         }
+        .visual-top{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
         .visual h4{
-            font-size: 1.2rem;
-            padding-bottom: 20px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            padding: 10px 20px;
         }
         .visual p{
            font-size: 0.8rem;
@@ -40,12 +51,15 @@
             padding: 0 10px;
         }
         .visual img{
-            width: 80%;
+            width: 60%;
+            height: 60%;
             object-fit: cover;
         }
-        main{
-            margin: 30px;
-            overflow-y: auto;
+        .visual> main p{
+           font-size: 1.2rem;
+           color: #333;
+           padding-top: 30px;
+            /* overflow-y: auto; */
             line-height: 1.6;
         }
         footer{
@@ -55,6 +69,11 @@
             text-align: center;
             font-size: 0.8rem;
         }
+        @media (max-width:560px) {
+            .visual img{
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -62,24 +81,27 @@
         <header>logo</header>
 
         <div class="visual">
-            <h4>
-                이재명 대통령 주재 국무회의, 중동 전쟁 여파에 비상국정<br/>
-                유류세 인하·26.2조 추경 의결···재생에너지 전환 속도전 주문<br/>
-                노동·가정폭력·환경 등 민생 법안 21건 공포…처벌·책임 강화<br/>
-                인천·경기 산업·물류 직격탄 우려…공급망·지방투자 확대 병행</h4>
+            <div class="visual-top">
+                <span></span>
+                <h4>
+                    이재명 대통령 주재 국무회의, 중동 전쟁 여파에 비상국정<br/>
+                    유류세 인하·26.2조 추경 의결···재생에너지 전환 속도전 주문<br/>
+                    노동·가정폭력·환경 등 민생 법안 21건 공포…처벌·책임 강화<br/>
+                    인천·경기 산업·물류 직격탄 우려…공급망·지방투자 확대 병행</h4>
+            </div>        
             <img src="./4.1 신문 이미지.jpg" alt="신문">
             <p>▲ 이재명 대통령이 31일 청와대에서 국무회의를 주재하고 있다. /연합뉴스</p>
+        
+            <main>
+                <p>
+                    중동 전쟁 여파로 국제 유가 급등 가능성이 현실화되면서 청와대가 ‘전시 수준’의 재정·에너지 대응 체계를 가동했다. 추가경정예산 26조 2000억 원을 포함해 세제, 법령, 공급망 관리까지 한 번에 묶은 전방위 대응이다.
+
+                    수도권 산업과 물류의 핵심 축인 인천·경기 지역은 이번 조치의 직접 영향권에 들어갔다. 에너지 수입 관문과 제조업 기반이 동시에 밀집된 구조상 정책 효과와 충격이 동시에 집약될 가능성이 크다.
+
+                    청와대는 31일 이재명 대통령 주재 국무회의에서 법률공포안 21건, 대통령령안 18건, 일반안건 23건을 심의·의결했다고 밝혔다.
+                </p>
+            </main>
         </div>
-        <main>
-            <p>
-                중동 전쟁 여파로 국제 유가 급등 가능성이 현실화되면서 청와대가 ‘전시 수준’의 재정·에너지 대응 체계를 가동했다. 추가경정예산 26조 2000억 원을 포함해 세제, 법령, 공급망 관리까지 한 번에 묶은 전방위 대응이다.
-
-                수도권 산업과 물류의 핵심 축인 인천·경기 지역은 이번 조치의 직접 영향권에 들어갔다. 에너지 수입 관문과 제조업 기반이 동시에 밀집된 구조상 정책 효과와 충격이 동시에 집약될 가능성이 크다.
-
-                청와대는 31일 이재명 대통령 주재 국무회의에서 법률공포안 21건, 대통령령안 18건, 일반안건 23건을 심의·의결했다고 밝혔다.
-            </p>
-           
-        </main>
         <footer>footer</footer>
     </div>
 </body>

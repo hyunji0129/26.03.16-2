@@ -5,7 +5,7 @@
 }
 body{
     font-family: sans-serif;
-    background: #f5f5f5;
+    background: antiquewhite;
 }
 a{
     text-decoration: none;
@@ -13,7 +13,7 @@ a{
 }
 .nav-bar{
     background: #fff;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid tomato;
     padding: 0 24px;
     height: 60px;
     display: flex;
@@ -65,7 +65,7 @@ a{
     list-style: none;
     background: #fff;
     padding: 20px 24px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid tomato;
 }
 .mobile-menu.open{
     display: flex;
@@ -79,3 +79,88 @@ a{
     .menu{display: none;}
     .hamburger{display: flex;}
 }
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: antiquewhite;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.nav-bar{
+    background: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #888;
+}
+.logo{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.menu a{
+    font-size: 0.9rem;
+    color: #444;
+    transition: color 0.2s;
+}
+.menu a:hover{
+    color: #111;
+    font-weight: 700;
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.hamburger span{
+    display: block;
+    width: 24px;
+    height: 2px;
+    gap: 5px;
+    background: #111;
+    transition: all 0.3s;
+}
+.hamburger.open span:nth-child(1) {transform: translateY(7px) rotate(45deg);}
+.hamburger.open span:nth-child(2) {opacity: 0;;}
+.hamburger.open span:nth-child(3) {transform: translateY(-7px) rotate(-45deg);}
+
+.mobile-menu{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+    background: #fff;
+    border-bottom: 1px solid #888;
+}
+.mobile-menu.open{
+    display: flex;
+}
+.mobile-menu a{
+    font-size: 0.95rem;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .menu {display: none;}
+    .hamburger{display: flex;}
+} */

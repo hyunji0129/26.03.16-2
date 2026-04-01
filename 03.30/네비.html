@@ -9,50 +9,86 @@
 </head>
 
 <body>
+     <nav class="nav-bar">
+        <a href="#" class="logo">My Portfolio</a>
 
-    <body>
-        <nav class="nav-bar">
-            <a href="#" class="logo">My Portfolio</a>
-
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-
-
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-
-        <ul class="mobile-menu" id="mobileMenu">
-            <li><a href="#" onclick="closeMenu()">Home</a></li>
-            <li><a href="#" onclick="closeMenu()">Home</a></li>
-            <li><a href="#" onclick="closeMenu()">Home</a></li>
-            <li><a href="#" onclick="closeMenu()">Home</a></li>
-
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
 
-        <script>
-            const hamburger = document.getElementById('hamburger');
-            const mobileMenu = document.getElementById('mobileMenu');
 
-            hamburger.addEventListener('click', () => {
-                hamburger.classList.toggle('open');
-                mobileMenu.classList.toggle('open');
-            });
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
 
-            function closeMenu() {
-                hamburger.classList.remove('open');
-                mobileMenu.classList.remove('open');
-            }
-        </script>
+    <ul class="mobile-menu" id="mobileMenu">
+        <li><a href="#" onclick="closeMenu()">Home</a></li>
+        <li><a href="#" onclick="closeMenu()">Home</a></li>
+        <li><a href="#" onclick="closeMenu()">Home</a></li>
+        <li><a href="#" onclick="closeMenu()">Home</a></li>
+    </ul>
 
-    </body>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        });
+
+        function closeMenu() {
+            hamburger.classList.remove('open');
+            mobileMenu.classList.remove('open');
+        }
+    </script>
+
+     
+
+<!-- 
+    <nav class="nav-bar">
+        <a href="#" class="logo">My Portfolio</a>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <ul class="mobile-menu" id="mobileMenu">
+        <li><a href="#" onclick="closeMenu()">Home</a></li>
+        <li><a href="#" onclick="closeMenu()">Home</a></li>
+        <li><a href="#" onclick="closeMenu()">Home</a></li>
+        <li><a href="#" onclick="closeMenu()">Home</a></li>
+    </ul>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        })
+
+        function closeMenu(){
+            hamburger.classList.remove('open');
+            mobileMenu.classList.remove('open');
+        }
+    </script>
+    -->
 </body>
 
 </html>
