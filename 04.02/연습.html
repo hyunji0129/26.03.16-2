@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최종 연습</title>
+    <link rel="stylesheet" href="./최종 연습.css">
+</head>
+
+<body>
+    <!-- 메뉴바 -->
+    <nav>
+        <div class="nav-inner">
+            <a href="#" class="logo">hyunji</a>
+
+            <ul class="menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" id="navBtn" aria-label="메뉴">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <ul class="mobile-menu" id="mobileMenu">
+            <li><a href="#" onclick="closeMenu()">About</a></li>
+            <li><a href="#" onclick="closeMenu()">Work</a></li>
+            <li><a href="#" onclick="closeMenu()">Gallery</a></li>
+            <li><a href="#" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- hero -->
+    <section class="hero">
+        <div class="hero-tag">subtitle</div>
+        <h1 class="hero-title">안녕하세요<br> 김현지입니다</h1>
+        <p class="hero-sub">소개글<br>쓰기</p>
+        <a href="#" class="hero-btn">포트폴리오 보기</a>
+        <div class="scroll-hint">SCROLL</div>
+    </section>
+
+    <!-- about -->
+    <section class="section" id="about">
+        <div class="about-inner">
+            <img class="about-photo" src="./이미지/명함.jpg" alt="프로필사진">
+            <div>
+                <div class="section-tag">About Me</div>
+                <h2 class="section-title">디자인도 코딩도 화이팅~!
+                </h2>
+                <p class="section-desc">설명글</p>
+
+                <div class="skill-list">
+                    <span class="skill-tag">Html</span>
+                    <span class="skill-tag">Css</span>
+                    <span class="skill-tag">Photoshop</span>
+                    <span class="skill-tag">Illustrator</span>
+                </div>
+
+                <a href="#" class="btn">다운로드</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
