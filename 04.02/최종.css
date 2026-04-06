@@ -211,8 +211,8 @@ nav{
     background: var(--white);
     padding-top: 120px;
 }
-.about-innner{
-    max-width: 1880px;
+.about-inner{
+    max-width: 1080px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
