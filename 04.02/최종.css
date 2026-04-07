@@ -338,7 +338,7 @@ nav {
     box-shadow: 0 16px 40px #33333317;
 }
 
-.card-img {
+.card img {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
@@ -361,7 +361,7 @@ nav {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 10px;
-    line-height: 1.4;
+    line-height: 1.4em;
 }
 
 .card-desc {
@@ -554,16 +554,20 @@ nav {
     .about-inner{
         grid-template-columns: 1fr;
         gap: 40px;
+        text-align: center;
     }
     .about-photo{
         aspect-ratio: 3/2;
         max-width: 360px;
         margin: 0 auto;
     }
+    .skill-list{display: block;}
     .footer-inner{flex-direction: column; gap: 8px; text-align: center;}
     footer{padding: 28px 24px;}
 } 
 
 @media (max-width: 560px){
+    .about-inner{text-align: center;}
+    .skill-list{display: block;}
     .card-grid{grid-template-columns: 1fr;}
 }

@@ -22,7 +22,7 @@
                 <span></span><span></span><span></span>
             </button>
         </div>
-
+        
         <ul class="mobile-menu" id="mobileMenu">
             <li><a href="#" onclick="closeMenu()">About</a></li>
             <li><a href="#" onclick="closeMenu()">Work</a></li>
@@ -30,6 +30,21 @@
             <li><a href="#" onclick="closeMenu()">Contact</a></li>
         </ul>
     </nav>
+
+    <script>
+        const hamburger = document.getElementById('navBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click',() =>{
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        })
+
+        function closeMenu(){
+            hamburger.classList.remove('open');
+            mobileMenu.classList.remove('open');
+        }
+    </script>
 
     <!-- hero -->
     <section class="hero">
