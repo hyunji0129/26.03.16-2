@@ -4,8 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연습04.08</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: #ddd;
+            height: 60px;
+        }
+        .logo{
+            background: #888;
+            padding: 10px 20px;
+        }
+        .nav-bar{
+            display: flex;
+            gap: 10px;
+        }
+        .nav-bar a{
+            text-decoration: none;
+            color: #000;
+            background: #888;
+            padding: 10px 20px;
+        }
+
+        .hero-box{
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: skyblue;
+        }
+
+        .card-box{
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+            height: 120px;
+        }
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            background: rgb(235, 235, 202);
+        }
+        .footer{
+            background: #ddd;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">LOGO</div>
+        <div class="nav-bar">
+           <a href="#">nav</a>
+           <a href="#">nav</a>
+           <a href="#">nav</a>
+        </div>
+    </header>
+
+    <section class="hero-box">
+        <div class="hero">hero</div>
+    </section>
+
+    <section class="card-box">
+        <div class="card">01</div>
+        <div class="card">02</div>
+        <div class="card">03</div>
+    </section>
+
+    <footer>
+        <div class="footer">footer</div>
+    </footer>
 </body>
 </html>
