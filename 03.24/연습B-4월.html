@@ -4,8 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연습B 04.08</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        .wrapper{
+            display: flex;
+            height: 100vh;
+        }
+        .sider{
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+            background: #ddd;
+            padding: 10px;
+            gap: 10px;
+        }
+        .logo{
+            background: #888;
+            text-align: center;
+            padding: 5px;
+        }
+        .nav-bar{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+        }
+        .nav-bar a{
+            text-decoration: none;
+            color: #000;
+            padding: 5px 26px;
+            background: #888;
+        }
+
+        .main-box{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .hero{
+            background: skyblue;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-box{
+            display: flex;
+            gap: 10px;
+            flex: 1;
+            padding: 10px;
+        }
+        .card{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(235, 235, 202);
+        }
+
+        .footer{
+            background: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <aside class="sider">
+            <div class="logo">LOGO</div>
+            <div class="nav-bar">
+                <a href="#">nav</a>
+                <a href="#">nav</a>
+                <a href="#">nav</a>
+            </div>
+        </aside>
+
+        <div class="main-box">
+            <div class="hero">hero</div>
+            <div class="card-box">
+                <div class="card">01</div>
+                <div class="card">02</div>
+                <div class="card">03</div>
+            </div>
+
+            <div class="footer">footer</div>
+        </div>
+    </div>
 </body>
 </html>
