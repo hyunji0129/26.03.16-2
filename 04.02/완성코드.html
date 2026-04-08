@@ -31,11 +31,25 @@
         </ul>
     </nav>
 
-    <script>
+    <!-- <script>
         const hamburger = document.getElementById('navBtn');
         const mobileMenu = document.getElementById('mobileMenu');
 
         hamburger.addEventListener('click',() =>{
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        })
+
+        function closeMenu(){
+            hamburger.classList.remove('open');
+            mobileMenu.classList.remove('open');
+        }
+    </script> -->
+    <script>
+        const hamburger = document.getElementById('navBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click' ,() =>{
             hamburger.classList.toggle('open');
             mobileMenu.classList.toggle('open');
         })
