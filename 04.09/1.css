@@ -15,8 +15,10 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1200px;
+    margin: 0 auto;
     height: 60px;
-    border-bottom: 1px solid #333;
+    border: 1px solid #333;
     padding: 0 20px;
 }
 .logo{
@@ -35,18 +37,26 @@ a{
 
 .main{
     height: 200px;
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
     font-weight: bold;
 }
 
 .sub-box{
     height: 120px;
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex: 1;
     border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
     padding: 10px 40px;
 }
 .sub{
@@ -63,6 +73,10 @@ a{
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
+    width: 1200px;
+    margin: 0 auto;
     border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
     padding: 20px 40px;
 }
